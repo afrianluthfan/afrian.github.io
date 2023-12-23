@@ -5,7 +5,7 @@ const FramerIcon: FC = () => (
   <div>
     <div className='dark:hidden'>
       <Image
-        src='/framer-svgrepo-com.svg'
+        src='./framer-svgrepo-com.svg'
         alt='framer black'
         height={100}
         width={100}
@@ -13,7 +13,7 @@ const FramerIcon: FC = () => (
     </div>
     <div className='hidden dark:block'>
       <Image
-        src='/framer-svgrepo-com-white.svg'
+        src='./framer-svgrepo-com-white.svg'
         alt='framer white'
         height={100}
         width={100}

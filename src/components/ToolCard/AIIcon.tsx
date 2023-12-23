@@ -5,7 +5,7 @@ const AIIcon: FC = () => (
   <div>
     <div className='dark:hidden'>
       <Image
-        src='/illustrator-svgrepo-com.svg'
+        src='./illustrator-svgrepo-com.svg'
         alt='ai black'
         height={100}
         width={100}
@@ -13,7 +13,7 @@ const AIIcon: FC = () => (
     </div>
     <div className='hidden dark:block'>
       <Image
-        src='/illustrator-svgrepo-white.svg'
+        src='./illustrator-svgrepo-white.svg'
         alt='ai white'
         height={100}
         width={100}

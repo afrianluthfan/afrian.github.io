@@ -5,7 +5,7 @@ const PSIcon: FC = () => (
   <div>
     <div className='dark:hidden'>
       <Image
-        src='/photoshop-svgrepo-com.svg'
+        src='./photoshop-svgrepo-com.svg'
         alt='ps black'
         height={100}
         width={100}
@@ -13,7 +13,7 @@ const PSIcon: FC = () => (
     </div>
     <div className='hidden dark:block'>
       <Image
-        src='/photoshop-svgrepo-white.svg'
+        src='./photoshop-svgrepo-white.svg'
         alt='ps white'
         height={100}
         width={100}

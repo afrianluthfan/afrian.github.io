@@ -19,7 +19,7 @@ const ToolsCard: FC = () => (
       >
         <Link href='https://www.typescriptlang.org/'>
           <Image
-            src='/typescript-official-svgrepo-com.svg'
+            src='./typescript-official-svgrepo-com.svg'
             alt='ts'
             width={100}
             height={100}
@@ -36,7 +36,7 @@ const ToolsCard: FC = () => (
       >
         <Link href='https://tailwindcss.com/'>
           <Image
-            src='/tailwind-svgrepo-com.svg'
+            src='./tailwind-svgrepo-com.svg'
             alt='tailwind'
             width={100}
             height={100}
@@ -65,7 +65,7 @@ const ToolsCard: FC = () => (
       >
         <Link href='https://fonts.google.com/'>
           <Image
-            src='/google-fonts.svg'
+            src='./google-fonts.svg'
             alt='google-fonts'
             width={100}
             height={100}
@@ -95,7 +95,7 @@ const ToolsCard: FC = () => (
       >
         <Link href='https://code.visualstudio.com/'>
           <Image
-            src='/visual-studio-code-svgrepo-com.svg'
+            src='./visual-studio-code-svgrepo-com.svg'
             alt='vscode'
             width={100}
             height={100}

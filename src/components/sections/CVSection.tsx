@@ -16,7 +16,7 @@ const CVSection: FC = () => (
         </div>
         <div className='w-[30%] flex items-center justify-center ml- z-1'>
           <Image
-            src='/muka.jpg'
+            src='./muka.jpg'
             alt='CV'
             width={300}
             height={300}
