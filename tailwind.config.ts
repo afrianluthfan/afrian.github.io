@@ -1,13 +1,27 @@
-import type { Config } from 'tailwindcss'
+import { nextui } from '@nextui-org/react';
+
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        montserrat: ['var(--font-montserrat)'],
+        albert: ['var(--font-albert-sans)'],
+        nunisa: [
+          'var(--font-nunito-sans)',
+          {
+            fontVariationSettings: '"wdth" 300',
+          },
+        ],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -15,6 +29,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
-}
-export default config
+  darkMode: 'class',
+  plugins: [nextui()],
+};
+export default config;
