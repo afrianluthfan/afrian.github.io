@@ -25,7 +25,7 @@ const TechCard: FC = () => (
 
     <Tooltip
       content={
-        <div className='px-1 py-2'>
+        <div className='px-1 py-2'> 
           <div className='text-small font-bold'>NextJS</div>
         </div>
       }
@@ -42,7 +42,7 @@ const TechCard: FC = () => (
       }
     >
       <Link href='https://codeigniter.com/'>
-        <Image src='/ci.svg' alt='javascript' width={100} height={100} />
+        <Image src='./ci.svg' alt='javascript' width={100} height={100} />
       </Link>
     </Tooltip>
   </Card>

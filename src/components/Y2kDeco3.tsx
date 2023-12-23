@@ -39,10 +39,10 @@ const Y2kDeco3: FC = () => {
       ref={ref}
     >
       <div className='dark:hidden w-auto h-auto'>
-        <Image src='/deco3-dark.svg' alt='deco1' height={600} width={600} />
+        <Image src='./deco3-dark.svg' alt='deco1' height={600} width={600} />
       </div>
       <div className='hidden dark:block w-auto h-auto'>
-        <Image src='/deco3.svg' alt='deco1' height={600} width={600} />
+        <Image src='./deco3.svg' alt='deco1' height={600} width={600} />
       </div>
     </motion.div>
   );
