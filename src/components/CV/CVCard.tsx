@@ -50,7 +50,7 @@ const CVCard: FC = () => {
         }}
       >
         <Card className='w-full h-[80%]' isFooterBlurred>
-          <CardBody className='relative flex flex-row justify-between overflow-hidden'>
+          <CardBody className='relative flex sm:flex-row sm:justify-between justify-center items-center overflow-hidden'>
             <div className='absolute flex w-full h-full -bottom-[450px] left-[35%] z-0'>
               <BlurBG />
             </div>
@@ -63,11 +63,11 @@ const CVCard: FC = () => {
                 className='rounded-full border-[10px] border-double'
               />
             </div>
-            <div className='flex flex-col relative items-end justify-center w-[50%] z-10 mr-16 '>
-              <h1 className='font-montserrat font-bold text-3xl text-right italic'>
+            <div className='flex flex-col relative sm:items-end items-center justify-center sm:w-[50%] w-full z-10 sm:mr-16'>
+              <h1 className='font-montserrat font-bold text-3xl sm:text-right text-left italic sm:mb-0 mb-5'>
                 Come and say hi!
               </h1>
-              <p className='font-montserrat text-lg text-right'>
+              <p className='font-montserrat text-lg sm:text-right text-center'>
                 Feel free to contact me for any inquiries or questions you may
                 have.
                 <br />I also welcome collaboration opportunities, so please let
