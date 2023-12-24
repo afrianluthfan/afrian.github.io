@@ -24,15 +24,15 @@ const IntroText: FC = () => {
   }
 
   return (
-    <motion.div className='flex relative flex-col h-[100%] w-[100%] items-end justify-center p-12'>
+    <motion.div className='flex relative flex-col h-[100%] w-[100%] items-end justify-center sm:p-12'>
       <motion.h1
-        className='font-albert text-6xl font-bold text-right'
+        className='font-albert text-5xl sm:text-6xl font-bold text-right'
         variants={gerak}
         initial='hidden'
         animate={animationControl}
         transition={{
           delay: 0,
-          duration: 2,
+          duration: 1.5,
           ease: 'easeInOut',
         }}
         ref={ref}

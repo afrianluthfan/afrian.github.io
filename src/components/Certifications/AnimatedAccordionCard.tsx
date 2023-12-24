@@ -1,18 +1,17 @@
 'use client';
 
 import React, { FC, useRef } from 'react';
-import Image from 'next/image';
+import { Card } from '@nextui-org/react';
 import { motion, useAnimation, useInView } from 'framer-motion';
+import AccordionCert from './AccordionCert';
 
-const Y2kDeco3: FC = () => {
+const AnimatedAccordionCard: FC = () => {
   const gerak = {
     hidden: {
-      y: 50,
-      x: 50,
+      x: -50,
       opacity: 0,
     },
     visible: {
-      y: 0,
       x: 0,
       opacity: 1,
     },
@@ -28,24 +27,25 @@ const Y2kDeco3: FC = () => {
 
   return (
     <motion.div
+      className='sm:w-[40%] w-[90%] sm:h-[80%] h-full sm:mx-0 mx-3'
       variants={gerak}
       initial='hidden'
       animate={animationControl}
       transition={{
         delay: 0,
-        duration: 1.5,
+        duration: 2,
         ease: 'easeInOut',
       }}
       ref={ref}
     >
-      <div className='dark:hidden w-auto h-auto'>
-        <Image src='./deco3-dark.svg' alt='deco1' height={600} width={600} />
-      </div>
-      <div className='hidden dark:block w-auto h-auto'>
-        <Image src='./deco3.svg' alt='deco1' height={600} width={600} />
-      </div>
+      <Card className='h-full p-11'>
+        <h1 className='font-bold mb-11 sm:text-medium text-small'>
+          My courses and ceritifications
+        </h1>
+        <AccordionCert />
+      </Card>
     </motion.div>
   );
 };
 
-export default Y2kDeco3;
+export default AnimatedAccordionCard;

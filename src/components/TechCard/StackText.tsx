@@ -1,18 +1,15 @@
 'use client';
 
 import React, { FC, useRef } from 'react';
-import Image from 'next/image';
 import { motion, useAnimation, useInView } from 'framer-motion';
 
-const Y2kDeco3: FC = () => {
+const StackText: FC = () => {
   const gerak = {
     hidden: {
-      y: 50,
-      x: 50,
+      x: -50,
       opacity: 0,
     },
     visible: {
-      y: 0,
       x: 0,
       opacity: 1,
     },
@@ -28,24 +25,22 @@ const Y2kDeco3: FC = () => {
 
   return (
     <motion.div
+      className='flex relative flex-col h-auto w-full sm:items-start justify-center px-6 sm:p-12'
       variants={gerak}
       initial='hidden'
       animate={animationControl}
       transition={{
         delay: 0,
-        duration: 1.5,
+        duration: 2,
         ease: 'easeInOut',
       }}
       ref={ref}
     >
-      <div className='dark:hidden w-auto h-auto'>
-        <Image src='./deco3-dark.svg' alt='deco1' height={600} width={600} />
-      </div>
-      <div className='hidden dark:block w-auto h-auto'>
-        <Image src='./deco3.svg' alt='deco1' height={600} width={600} />
-      </div>
+      <h1 className='font-albert text-5xl sm:text-8xl font-bold text-left w-[70%]'>
+        These are the main tech stacks that I use,
+      </h1>
     </motion.div>
   );
 };
 
-export default Y2kDeco3;
+export default StackText;

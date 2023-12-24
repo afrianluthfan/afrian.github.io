@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
-import { Divider } from '@nextui-org/react';
+import AnimatedDivider from '../AnimatedDivider';
 import ToolsCard from '../ToolCard/ToolsCard';
+import ToolsText from '../ToolCard/ToolsText';
 
 const StacksSection2: FC = () => (
   <section
@@ -8,17 +9,14 @@ const StacksSection2: FC = () => (
     id='libs'
   >
     <div className='flex flex-row w-[100%] h-full justify-center items-center'>
-      <div className='flex relative w-full h-full items-center justify-start ml-12'>
+      <div className='flex relative w-[80%] sm:w-full items-center justify-start ml-4 sm:ml-12'>
         <ToolsCard />
       </div>
-      <div className='h-[60%]'>
-        <Divider orientation='vertical' className='w-1' />
+      <div className='h-[60%] mx-5 sm:mx-0'>
+        <AnimatedDivider />
       </div>
-      <div className='flex relative flex-col h-[100%] w-[100%] items-end justify-center p-12'>
-        <h1 className='font-albert text-8xl font-bold text-right w-[80%]'>
-          ..and these are the supporting libraries and tools I use alongside
-          them.
-        </h1>
+      <div className='flex relative flex-col h-full sm:w-full w-96 sm:items-end justify-center sm:p-12'>
+        <ToolsText />
       </div>
     </div>
   </section>

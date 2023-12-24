@@ -1,18 +1,15 @@
 'use client';
 
 import React, { FC, useRef } from 'react';
-import Image from 'next/image';
 import { motion, useAnimation, useInView } from 'framer-motion';
 
-const Y2kDeco3: FC = () => {
+const ToolsText: FC = () => {
   const gerak = {
     hidden: {
-      y: 50,
       x: 50,
       opacity: 0,
     },
     visible: {
-      y: 0,
       x: 0,
       opacity: 1,
     },
@@ -27,25 +24,21 @@ const Y2kDeco3: FC = () => {
   }
 
   return (
-    <motion.div
+    <motion.h1
+      className='font-albert text-3xl sm:text-8xl font-bold text-right w-[80%]'
       variants={gerak}
       initial='hidden'
       animate={animationControl}
       transition={{
         delay: 0,
-        duration: 1.5,
+        duration: 2,
         ease: 'easeInOut',
       }}
       ref={ref}
     >
-      <div className='dark:hidden w-auto h-auto'>
-        <Image src='./deco3-dark.svg' alt='deco1' height={600} width={600} />
-      </div>
-      <div className='hidden dark:block w-auto h-auto'>
-        <Image src='./deco3.svg' alt='deco1' height={600} width={600} />
-      </div>
-    </motion.div>
+      ..and these are the supporting libraries and tools I use alongside them.
+    </motion.h1>
   );
 };
 
-export default Y2kDeco3;
+export default ToolsText;

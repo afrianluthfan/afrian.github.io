@@ -1,18 +1,16 @@
 'use client';
 
 import React, { FC, useRef } from 'react';
-import Image from 'next/image';
 import { motion, useAnimation, useInView } from 'framer-motion';
+import Timeline from './Timeline';
 
-const Y2kDeco3: FC = () => {
+const AnimatedTimeline: FC = () => {
   const gerak = {
     hidden: {
-      y: 50,
       x: 50,
       opacity: 0,
     },
     visible: {
-      y: 0,
       x: 0,
       opacity: 1,
     },
@@ -28,24 +26,20 @@ const Y2kDeco3: FC = () => {
 
   return (
     <motion.div
+      className='absolute w-full sm:bottom-52 bottom-96'
       variants={gerak}
       initial='hidden'
       animate={animationControl}
       transition={{
         delay: 0,
-        duration: 1.5,
+        duration: 2,
         ease: 'easeInOut',
       }}
       ref={ref}
     >
-      <div className='dark:hidden w-auto h-auto'>
-        <Image src='./deco3-dark.svg' alt='deco1' height={600} width={600} />
-      </div>
-      <div className='hidden dark:block w-auto h-auto'>
-        <Image src='./deco3.svg' alt='deco1' height={600} width={600} />
-      </div>
+      <Timeline />
     </motion.div>
   );
 };
 
-export default Y2kDeco3;
+export default AnimatedTimeline;

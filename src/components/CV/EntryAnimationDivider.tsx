@@ -1,20 +1,20 @@
 'use client';
 
 import React, { FC, useRef } from 'react';
-import Image from 'next/image';
+import { Divider } from '@nextui-org/react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 
-const Y2kDeco3: FC = () => {
+const EntryAnimationDivider: FC = () => {
   const gerak = {
     hidden: {
-      y: 50,
-      x: 50,
-      opacity: 0,
-    },
-    visible: {
-      y: 0,
+      height: 0,
       x: 0,
       opacity: 1,
+    },
+    visible: {
+      height: '100%',
+      x: -50,
+      opacity: 0,
     },
   };
 
@@ -32,20 +32,15 @@ const Y2kDeco3: FC = () => {
       initial='hidden'
       animate={animationControl}
       transition={{
-        delay: 0,
-        duration: 1.5,
-        ease: 'easeInOut',
+        default: { delay: 0, duration: 1, ease: 'easeInOut' },
+        x: { delay: 0, duration: 0.1, ease: 'easeInOut' },
+        opacity: { delay: 1.5, duration: 0.1, ease: 'easeOut' },
       }}
       ref={ref}
     >
-      <div className='dark:hidden w-auto h-auto'>
-        <Image src='./deco3-dark.svg' alt='deco1' height={600} width={600} />
-      </div>
-      <div className='hidden dark:block w-auto h-auto'>
-        <Image src='./deco3.svg' alt='deco1' height={600} width={600} />
-      </div>
+      <Divider orientation='vertical' className='w-1' />
     </motion.div>
   );
 };
 
-export default Y2kDeco3;
+export default EntryAnimationDivider;

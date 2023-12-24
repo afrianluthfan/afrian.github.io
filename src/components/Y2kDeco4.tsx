@@ -1,13 +1,14 @@
 import React, { FC } from 'react';
-import Image from 'next/image';
+import Deco4Light from './Experiences/Deco4Light';
+import Deco4Dark from './Experiences/Deco4Dark';
 
 const Y2kDeco4: FC = () => (
   <div>
-    <div className='dark:hidden w-auto h-auto'>
-      <Image src='./deco4-dark.svg' alt='deco1' height={1200} width={1200} />
+    <div className='dark:hidden w-[1200px] h-[1200px]'>
+      <Deco4Light />
     </div>
-    <div className='hidden dark:block w-auto h-auto'>
-      <Image src='./deco4.svg' alt='deco1' height={1200} width={1200} />
+    <div className='hidden dark:block w-[1200px] h-[1200px]'>
+      <Deco4Dark />
     </div>
   </div>
 );

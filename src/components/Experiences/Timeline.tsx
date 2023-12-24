@@ -4,7 +4,7 @@ import ProgressBar from './ProgressBar';
 import ExpSlider from './ExpSlider';
 
 const Timeline: FC = () => (
-  <div className='flex flex-col items-center justify-center'>
+  <div className='flex flex-col items-center justify-center h-96'>
     <div className='flex flex-col w-[70%]'>
       <div className='flex flex-row w-full gap-1 items-center'>
         <div className='w-[33%]' />
@@ -97,9 +97,11 @@ const Timeline: FC = () => (
         <ExpSlider />
       </div>
     </div>
-    <h1 className='font-bold pt-8'>
-      Hover over each bar to see the details of my activities!
-    </h1>
+    <div>
+      <h1 className='font-bold pt-8 text-sm sm:text-medium sm:w-auto w-[50%]'>
+        Hover over each bar to see the details of my activities!
+      </h1>
+    </div>
   </div>
 );
 

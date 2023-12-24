@@ -1,16 +1,17 @@
 'use client';
 
 import React, { FC, useRef } from 'react';
+import { Divider } from '@nextui-org/react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 
-const StackText: FC = () => {
+const AnimatedDivider: FC = () => {
   const gerak = {
     hidden: {
-      x: -50,
+      height: 0,
       opacity: 0,
     },
     visible: {
-      x: 0,
+      height: '100%',
       opacity: 1,
     },
   };
@@ -25,7 +26,6 @@ const StackText: FC = () => {
 
   return (
     <motion.div
-      className='flex relative flex-col h-auto w-[100%] items-start justify-center p-12'
       variants={gerak}
       initial='hidden'
       animate={animationControl}
@@ -36,11 +36,9 @@ const StackText: FC = () => {
       }}
       ref={ref}
     >
-      <h1 className='font-albert text-8xl font-bold text-left w-[70%]'>
-        These are the main tech stacks that I use,
-      </h1>
+      <Divider orientation='vertical' className='w-1' />
     </motion.div>
   );
 };
 
-export default StackText;
+export default AnimatedDivider;
