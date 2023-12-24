@@ -5,7 +5,7 @@ import { LinkedinIcon, GithubIcon, MailIcon } from 'lucide-react';
 import { Tooltip, Link } from '@nextui-org/react';
 
 const FooterSection: FC = () => (
-  <section className='h-[150px] w-full flex justify-between p-8 px-16'>
+  <section className='h-[150px] w-full flex justify-between p-8 sm:px-16 px-8'>
     <div className='flex flex-col'>
       <p className='font-bold text-3xl font-nunisa italic'>riann</p>
       <div className='flex flex-row mt-3 gap-2'>
