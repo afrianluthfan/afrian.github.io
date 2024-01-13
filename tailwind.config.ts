@@ -12,11 +12,11 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)'],
+        sans: ['var(--font-intersans)'],
         montserrat: ['var(--font-montserrat)'],
-        albert: ['var(--font-albert-sans)'],
+        albert: ['var(--font-albertsans)'],
         nunisa: [
-          'var(--font-nunito-sans)',
+          'var(--font-nunitosans)',
           {
             fontVariationSettings: '"wdth" 300',
           },

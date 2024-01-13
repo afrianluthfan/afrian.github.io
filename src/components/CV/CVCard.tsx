@@ -35,7 +35,7 @@ const CVCard: FC = () => {
   }
 
   return (
-    <div className='flex items-center h-full w-full gap-0' ref={ref}>
+    <div className='flex items-center h-[80%] w-full gap-0' ref={ref}>
       <div className='flex h-[80%]'>
         <EntryAnimationDivider />
       </div>
@@ -49,12 +49,12 @@ const CVCard: FC = () => {
           opacity: { delay: 1.5, duration: 1, ease: 'easeOut' },
         }}
       >
-        <Card className='w-full h-[80%]' isFooterBlurred>
+        <Card className='w-full h-full' isFooterBlurred>
           <CardBody className='relative flex sm:flex-row sm:justify-between justify-center items-center overflow-hidden'>
             <div className='absolute flex w-full h-full -bottom-[450px] left-[35%] z-0'>
               <BlurBG />
             </div>
-            <div className='w-[30%] flex items-center justify-center ml- z-1'>
+            <div className='w-[30%] flex items-center justify-center ml- z-1 mb-10 sm:mb-0'>
               <Image
                 src='./muka.jpg'
                 alt='CV'
@@ -64,10 +64,10 @@ const CVCard: FC = () => {
               />
             </div>
             <div className='flex flex-col relative sm:items-end items-center justify-center sm:w-[50%] w-full z-10 sm:mr-16'>
-              <h1 className='font-montserrat font-bold text-3xl sm:text-right text-left italic sm:mb-0 mb-5'>
+              <h1 className='font-montserrat font-bold text-3xl sm:text-4xl sm:text-right text-left italic sm:mb-0 mb-5'>
                 Come and say hi!
               </h1>
-              <p className='font-montserrat text-lg sm:text-right text-center'>
+              <p className='font-montserrat text-xl sm:text-2xl sm:text-right text-center'>
                 Feel free to contact me for any inquiries or questions you may
                 have.
                 <br />I also welcome collaboration opportunities, so please let

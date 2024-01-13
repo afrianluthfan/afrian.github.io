@@ -8,7 +8,7 @@ import './globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-intersans',
   display: 'swap',
 });
 
@@ -20,13 +20,13 @@ const montserrat = Montserrat({
 
 const albertSans = Albert_Sans({
   subsets: ['latin'],
-  variable: '--font-albert-sans',
+  variable: '--font-albertsans',
   display: 'swap',
 });
 
 const nunitoSans = Nunito_Sans({
   subsets: ['latin'],
-  variable: '--font-nunito-sans',
+  variable: '--font-nunitosans',
   display: 'swap',
 });
 
