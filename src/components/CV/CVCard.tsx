@@ -35,7 +35,7 @@ const CVCard: FC = () => {
   }
 
   return (
-    <div className='flex items-center h-[80%] w-full gap-0' ref={ref}>
+    <div className='flex items-center h-[80%] w-full gap-0'>
       <div className='flex h-[80%]'>
         <EntryAnimationDivider />
       </div>
@@ -76,7 +76,7 @@ const CVCard: FC = () => {
             </div>
           </CardBody>
           <CardFooter className='relative flex flex-row items-center justify-center'>
-            <Button color='primary' endContent={<DownloadIcon />}>
+            <Button color='primary' endContent={<DownloadIcon />} ref={ref}>
               <Link
                 href='https://drive.google.com/uc?export=download&id=1Sr6phI9LHePdprOqeuN9cecaN542nBCk'
                 className='text-white '
