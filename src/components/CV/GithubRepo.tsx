@@ -31,7 +31,7 @@ const GithubRepo: FC = () => {
       initial='hidden'
       animate={animationControl}
       transition={{
-         duration: 2,
+        duration: 2,
         ease: 'easeInOut',
       }}
       ref={ref}
