@@ -75,15 +75,15 @@ const CVCard: FC = () => {
               </p>
             </div>
           </CardBody>
-          <CardFooter className='relative flex flex-row items-center justify-center'>
-            <Button color='primary' endContent={<DownloadIcon />} ref={ref}>
-              <Link
-                href='https://drive.google.com/uc?export=download&id=1lX8kW0yS_ztVoYdW6wcC2THylz3g2pAP'
-                className='text-white '
-              >
+          <CardFooter>
+            <Link
+              href='https://drive.google.com/uc?export=download&id=1lX8kW0yS_ztVoYdW6wcC2THylz3g2pAP'
+              className='text-white flex flex-row items-center justify-center w-full h-full'
+            >
+              <Button color='primary' endContent={<DownloadIcon />} ref={ref}>
                 Get my CV
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </CardFooter>
         </Card>
       </motion.div>

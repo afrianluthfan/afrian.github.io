@@ -39,18 +39,18 @@ const GithubRepo: FC = () => {
       <h1 className='text-center sm:text-xl text-lg font-semibold sm:font-bold'>
         Check out the GitHub repository of this page here
       </h1>
-      <Button
-        color='primary'
-        className='mt-3 sm:w-[30%]'
-        endContent={<GithubIcon />}
+      <Link
+        href='https://github.com/afrianluthfan/afrianluthfan.github.io'
+        className='text-white flex items-center justify-center'
       >
-        <Link
-          href='https://github.com/afrianluthfan/afrianluthfan.github.io'
-          className='text-white'
+        <Button
+          color='primary'
+          className='mt-3 w-full'
+          endContent={<GithubIcon />}
         >
           GitHub Repository
-        </Link>
-      </Button>
+        </Button>
+      </Link>
     </motion.div>
   );
 };
