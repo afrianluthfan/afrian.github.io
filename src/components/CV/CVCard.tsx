@@ -78,7 +78,7 @@ const CVCard: FC = () => {
           <CardFooter className='relative flex flex-row items-center justify-center'>
             <Button color='primary' endContent={<DownloadIcon />} ref={ref}>
               <Link
-                href='https://drive.google.com/uc?export=download&id=1Sr6phI9LHePdprOqeuN9cecaN542nBCk'
+                href='https://drive.google.com/uc?export=download&id=1lX8kW0yS_ztVoYdW6wcC2THylz3g2pAP'
                 className='text-white '
               >
                 Get my CV
