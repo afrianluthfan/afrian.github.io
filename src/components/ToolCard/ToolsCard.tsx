@@ -94,7 +94,7 @@ const ToolsCard: FC = () => {
                 </div>
               }
             >
-              <Link href='https://framer.com/'>
+              <Link href='https://www.framer.com/motion/'>
                 <FramerIcon />
               </Link>
             </Tooltip>
