@@ -36,7 +36,7 @@ const GithubRepo: FC = () => {
       }}
       ref={ref}
     >
-      <h1 className='text-center sm:text-xl text-lg font-semibold sm:font-bold'>
+      <h1 className='text-center sm:text-xl text-lg font-medium sm:font-bold'>
         Check out the GitHub repository of this page here
       </h1>
       <Link

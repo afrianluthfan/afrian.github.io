@@ -75,12 +75,17 @@ const CVCard: FC = () => {
               </p>
             </div>
           </CardBody>
-          <CardFooter>
+          <CardFooter className='items-center justify-center'>
             <Link
               href='https://drive.google.com/uc?export=download&id=1lX8kW0yS_ztVoYdW6wcC2THylz3g2pAP'
-              className='text-white flex flex-row items-center justify-center w-full h-full'
+              className='text-white'
             >
-              <Button color='primary' endContent={<DownloadIcon />} ref={ref}>
+              <Button
+                color='primary'
+                endContent={<DownloadIcon />}
+                ref={ref}
+                className='sm:w-64 sm:h-12 h-11 w-48 sm:text-lg'
+              >
                 Get my CV
               </Button>
             </Link>
