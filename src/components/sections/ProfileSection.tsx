@@ -14,8 +14,12 @@ const ProfileSection: FC = () => (
         Continuously growing, continually learning.
       </h1>
       <h1 className='font-nunisa text-7xl sm:text-9xl font-[1000] text-center z-10'>
-        Afrian Luthfan
+        <span className='text-orange-600'>Afrian </span>Luthfan
       </h1>
+      <p className='mt-5 text-gray-500 hidden sm:block'>
+        (hit f11 to enter fullscreen on desktop for the best intended
+        experience)
+      </p>
     </div>
   </section>
 );

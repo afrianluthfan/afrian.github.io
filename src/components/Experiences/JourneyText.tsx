@@ -36,7 +36,7 @@ const JourneyText: FC = () => {
       }}
       ref={ref}
     >
-      A little bit about my journey
+      A little bit about my <span className='text-orange-600'>journey</span>
     </motion.h1>
   );
 };

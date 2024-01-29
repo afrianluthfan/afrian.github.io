@@ -1,20 +1,17 @@
 'use client';
 
 import React, { FC, useRef } from 'react';
-import { Divider } from '@nextui-org/react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 
-const EntryAnimationDivider: FC = () => {
+const Text: FC = () => {
   const gerak = {
     hidden: {
-      height: 0,
-      x: 0,
-      opacity: 1,
+      x: -100,
+      opacity: 0,
     },
     visible: {
-      height: '100%',
-      x: -50,
-      opacity: 0,
+      x: 0,
+      opacity: 1,
     },
   };
 
@@ -27,20 +24,22 @@ const EntryAnimationDivider: FC = () => {
   }
 
   return (
-    <motion.div
+    <motion.p
+      className='sm:text-6xl text-5xl font-bold sm:w-[30%] sm:mt-10 mt-32'
       variants={gerak}
       initial='hidden'
       animate={animationControl}
       transition={{
-        default: { delay: 0, duration: 1, ease: 'easeInOut' },
-        x: { delay: 0, duration: 0.1, ease: 'easeInOut' },
-        opacity: { delay: 1.5, duration: 0.1, ease: 'easeOut' },
+        delay: 0,
+        duration: 2,
+        ease: 'easeInOut',
       }}
       ref={ref}
     >
-      <Divider orientation='vertical' className='w-1' />
-    </motion.div>
+      Here are a couple of{' '}
+      <span className='text-orange-600'>other projects </span>that I have worked
+      on or have been working on
+    </motion.p>
   );
 };
-
-export default EntryAnimationDivider;
+export default Text;

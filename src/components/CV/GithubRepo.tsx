@@ -37,7 +37,11 @@ const GithubRepo: FC = () => {
       ref={ref}
     >
       <h1 className='text-center sm:text-xl text-lg font-medium sm:font-bold'>
-        Check out the GitHub repository of this page here
+        Check out the&nbsp;
+        <span className='text-orange-600 sm:text-xl text-lg'>
+          GitHub repository&nbsp;
+        </span>
+        of this page here
       </h1>
       <Link
         href='https://github.com/afrianluthfan/afrianluthfan.github.io'

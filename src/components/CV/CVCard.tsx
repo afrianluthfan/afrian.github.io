@@ -12,7 +12,6 @@ import {
 } from '@nextui-org/react';
 import BlurBG from '../BlurBG';
 import DownloadIcon from '../DownloadIcon';
-import EntryAnimationDivider from './EntryAnimationDivider';
 
 const CVCard: FC = () => {
   const card = {
@@ -36,17 +35,15 @@ const CVCard: FC = () => {
 
   return (
     <div className='flex items-center h-[80%] w-full gap-0'>
-      <div className='flex h-[80%]'>
-        <EntryAnimationDivider />
-      </div>
       <motion.div
         className='flex items-center justify-center h-full w-full'
         variants={card}
         initial='hidden'
         animate={animationControl}
         transition={{
-          default: { delay: 1.5, duration: 1, ease: 'easeInOut' },
-          opacity: { delay: 1.5, duration: 1, ease: 'easeOut' },
+          delay: 0,
+          duration: 2,
+          ease: 'easeInOut',
         }}
       >
         <Card className='w-full h-full' isFooterBlurred>
@@ -64,7 +61,10 @@ const CVCard: FC = () => {
               />
             </div>
             <div className='flex flex-col relative sm:items-end items-center justify-center sm:w-[50%] w-full z-10 sm:mr-16'>
-              <h1 className='font-montserrat font-bold text-3xl sm:text-4xl sm:text-right text-left italic sm:mb-0 mb-5'>
+              <h1
+                className='font-montserrat font-bold text-3xl sm:text-4xl sm:text-right text-left italic sm:mb-0 mb-5'
+                ref={ref}
+              >
                 Come and say hi!
               </h1>
               <p className='font-montserrat text-xl sm:text-2xl sm:text-right text-center'>
@@ -83,7 +83,6 @@ const CVCard: FC = () => {
               <Button
                 color='primary'
                 endContent={<DownloadIcon />}
-                ref={ref}
                 className='sm:w-64 sm:h-12 h-11 w-48 sm:text-lg'
               >
                 Get my CV

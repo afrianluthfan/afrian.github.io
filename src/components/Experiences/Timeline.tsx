@@ -7,6 +7,7 @@ const Timeline: FC = () => (
   <div className='flex flex-col items-center justify-center h-96'>
     <div className='flex flex-col w-[70%]'>
       <div className='flex flex-row w-full gap-1 items-center'>
+        <div className='w-[20%] my-1' /> {/* skip by a year */}
         <div className='w-[33%]' />
         <Tooltip
           showArrow
@@ -18,6 +19,7 @@ const Timeline: FC = () => (
         </Tooltip>
       </div>
       <div className='flex flex-row w-full gap-1 items-center'>
+        <div className='w-[20%] my-1' /> {/* skip by a year */}
         <div className='w-[15%]' />
         <Tooltip
           showArrow
@@ -36,7 +38,6 @@ const Timeline: FC = () => (
             <ProgressBar warna={2} />
           </div>
         </Tooltip>
-
         <Tooltip
           showArrow
           content='Jan 2022 - Jan 2023 | Became Vice President at Himpunan Mahasiswa S-1 Rekayasa Perangkat Lunak Telkom University.'
@@ -47,7 +48,7 @@ const Timeline: FC = () => (
         </Tooltip>
       </div>
       <div className='flex flex-row w-full gap-1 items-center'>
-        <div className='w-[50%]' />
+        <div className='w-[49%]' />
         <Tooltip
           showArrow
           content='Jun 2021 - Nov 2021 | Became Executive Vice Chairman of E-Wallet User Research Challenge Event Organizer at Indosat Ooredoo'
@@ -56,19 +57,21 @@ const Timeline: FC = () => (
             <ProgressBar warna={1} />
           </div>
         </Tooltip>
+        <div className='w-[1%]' />
+
         <Tooltip
           showArrow
           content='Jan 2022 - Jun 2022 | Worked as a Virtual Assistant at Slide Factory, Bandung.'
         >
-          <div className='w-[10%]'>
+          <div className='w-[8%]'>
             <ProgressBar warna={1} />
           </div>
         </Tooltip>
         <Tooltip
           showArrow
-          content='Jun 2022 Aug 2022 | Worked as a Database Intern at Badan Amil Zakat Nasional.'
+          content='Jun 2022 - Aug 2022 | Worked as a Database Intern at Badan Amil Zakat Nasional.'
         >
-          <div className='w-[5%] my-1'>
+          <div className='w-[4%] my-1'>
             <ProgressBar warna={1} />
           </div>
         </Tooltip>
@@ -87,7 +90,7 @@ const Timeline: FC = () => (
           showArrow
           content='Aug 2019 - Nov 2023 | Studied at Telkom University majoring in Software Engineering'
         >
-          <div className='w-[88%] my-1'>
+          <div className='w-[83%] my-1'>
             <ProgressBar warna={4} />
           </div>
         </Tooltip>

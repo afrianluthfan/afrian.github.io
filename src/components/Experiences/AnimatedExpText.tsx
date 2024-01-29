@@ -36,7 +36,8 @@ const AnimatedExpText: FC = () => {
       }}
       ref={ref}
     >
-      Here&apos;s a timeline to help you visualize my journey better.
+      Here&apos;s a <span className='text-orange-600'>timeline </span> to help
+      you <span className='text-orange-600'>visualize</span> my journey better.
     </motion.h1>
   );
 };

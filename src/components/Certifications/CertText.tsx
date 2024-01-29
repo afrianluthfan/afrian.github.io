@@ -37,7 +37,9 @@ const CertText: FC = () => {
       ref={ref}
     >
       <h1 className='font-albert text-4xl sm:text-8xl sm:px-0 font-bold text-left'>
-        I have also taken some courses and certifcations to make myself grow.
+        I have also taken some <span className='text-orange-600'>courses </span>
+        and <span className='text-orange-600'>certifcations </span> to push
+        myself to grow.
       </h1>
     </motion.div>
   );

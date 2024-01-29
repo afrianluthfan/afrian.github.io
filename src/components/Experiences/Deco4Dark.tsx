@@ -41,6 +41,7 @@ const Deco4Dark: FC = () => {
         }}
         fill='#000'
         stroke='#fff'
+        strokeWidth={0.2}
         stroke-miterlimit='10'
         data-name='Layer 1'
       />

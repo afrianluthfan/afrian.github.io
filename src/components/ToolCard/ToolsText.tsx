@@ -36,7 +36,10 @@ const ToolsText: FC = () => {
       }}
       ref={ref}
     >
-      ..and these are the supporting libraries and tools I use alongside them.
+      ..and these are the supporting
+      <span className='text-orange-600'> libraries </span>
+      and
+      <span className='text-orange-600'> tools </span>I use alongside them.
     </motion.h1>
   );
 };

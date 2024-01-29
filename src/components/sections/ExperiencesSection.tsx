@@ -5,7 +5,7 @@ import AnimatedExpText from '../Experiences/AnimatedExpText';
 
 const ExperiencesSection: FC = () => (
   <section
-    className='flex flex-col justify-between w-full sm:h-[800px] h-[1200px] relative pt-32 sm:pl-16 px-8'
+    className='flex flex-col justify-between w-full sm:h-[800px] h-[1200px] relative pt-32 sm:pl-16 px-8 sm:mb-64'
     id='exp'
   >
     <AnimatedExpText />

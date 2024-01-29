@@ -42,7 +42,13 @@ const NavigationBar: FC = () => (
       </NavbarItem>
       <Divider orientation='vertical' className='h-[40%]' />
       <NavbarItem>
-        <Link color='foreground' href='#CV'>
+        <Link color='foreground' href='#proj'>
+          Other Projects
+        </Link>
+      </NavbarItem>
+      <Divider orientation='vertical' className='h-[40%]' />
+      <NavbarItem>
+        <Link color='foreground' href='#cv'>
           CV
         </Link>
       </NavbarItem>

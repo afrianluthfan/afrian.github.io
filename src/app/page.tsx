@@ -7,6 +7,7 @@ import StacksSection2 from '@/components/sections/StacksSection2';
 import Separator from '@/components/Separator';
 import ExperiencesSection from '@/components/sections/ExperiencesSection';
 import CertificationsSection from '@/components/sections/CertificationsSection';
+import OtherProjectSection from '@/components/sections/OtherProjectSection';
 import CVSection from '@/components/sections/CVSection';
 import FooterSection from '@/components/sections/FooterSection';
 
@@ -20,6 +21,8 @@ const Home = () => (
     <IntroSection2 />
     <ExperiencesSection />
     <CertificationsSection />
+    <Separator />
+    <OtherProjectSection />
     <CVSection />
     <FooterSection />
   </main>

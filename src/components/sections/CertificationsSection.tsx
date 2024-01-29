@@ -3,6 +3,7 @@ import AnimatedDivider from '../AnimatedDivider';
 import CertText from '../Certifications/CertText';
 import AnimatedAccordionCard from '../Certifications/AnimatedAccordionCard';
 import AnimatedDividerH from '../AnimatedDividerH';
+import Y2kDeco5 from '../Y2kDeco5';
 
 const CertificationsSection: FC = () => (
   <section
@@ -11,6 +12,9 @@ const CertificationsSection: FC = () => (
   >
     <div className='flex sm:w-[40%] w-[80%]'>
       <CertText />
+    </div>
+    <div className='w-96 h-96 absolute top-0 left-0 rotate-90'>
+      <Y2kDeco5 />
     </div>
     <div className='hidden sm:block h-[80%]'>
       <AnimatedDivider />
