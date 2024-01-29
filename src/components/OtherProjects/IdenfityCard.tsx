@@ -87,7 +87,7 @@ const IdentifyCard: FC = () => {
         </CardBody>
         <CardFooter className='bg-yellow-400 pl-10'>
           <p className='text-zinc-900 font-semibold'>
-            Status: Witing for Spotify&apos;s approval for their API
+            Status: Waiting for Spotify&apos;s approval for their API
           </p>
         </CardFooter>
       </Card>
