@@ -52,14 +52,17 @@ const MorowaliCard: FC = () => {
             <p ref={ref}>
               Worked on the frontend side of the project. This project is aimed
               to be able to help people from villages in Indonesia to have
-              access to data administering. This web app is built using VueJS
-              with Javascript as the main language. The project is built by a
-              team of eight individuals from many different backgrounds. I had
-              to adapt to the team&apos;s workflow and learn VueJS in a short
-              amount of time. This project is still in progress and is expected
-              to be finished by the end of February 2024. The contributors of
-              this project are all people from Indonesia. The project is to be
-              funded by the government of Indonesia.
+              access to data administering. This web app is built using
+              <span className='text-orange-600 font-bold'> VueJS </span>
+              with
+              <span className='text-orange-600 font-bold'> Javascript </span> as
+              the main language. The project is built by a team of eight
+              individuals from many different backgrounds. I had to adapt to the
+              team&apos;s workflow and learn VueJS in a short amount of time.
+              This project is still in progress and is expected to be finished
+              by the end of February 2024. The contributors of this project are
+              all people from Indonesia. The project is to be funded by the
+              government of Indonesia.
             </p>
           </ScrollShadow>
         </CardBody>
@@ -83,7 +86,8 @@ const MorowaliCard: FC = () => {
         </CardBody>
         <CardFooter className='bg-yellow-400 pl-10'>
           <p className='text-zinc-900 font-semibold'>
-            Status: Finishing up on the frontend side of the project
+            Status: <span className='font-extrabold'>Soon to be deployed</span>,
+            finishing up on the frontend side of the project
           </p>
         </CardFooter>
       </Card>

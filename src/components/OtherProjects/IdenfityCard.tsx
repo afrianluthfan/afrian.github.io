@@ -11,6 +11,7 @@ import {
 } from '@nextui-org/react';
 import Link from 'next/link';
 import GitHubIcon from '../ToolCard/GitHubIcon';
+import NewTabIcon from '../NewTabIcon';
 
 const IdentifyCard: FC = () => {
   const gerak = {
@@ -45,15 +46,28 @@ const IdentifyCard: FC = () => {
     >
       <Card className='sm:h-[75%] w-[80%]'>
         <CardHeader className='text-5xl font-bold px-10 pt-10'>
-          Identify
+          <Link
+            href='https://identi-fy.vercel.app/'
+            className='flex flex-row w-auto gap-2 text-emerald-200'
+          >
+            Identify
+            <div className='w-[30px] flex '>
+              <NewTabIcon />
+            </div>
+          </Link>
         </CardHeader>
         <CardBody className='px-10 pt-5 h-[30vh] sm:h-[60%]'>
           <ScrollShadow>
             <p ref={ref}>
-              Worked on the frontend side of the project. The goal of the
-              creation of this website is for us, the creators of this website,
-              to showcase the implementation of Spotify Web API&apos;s features
-              such as authorization and API consumption. Some examples of API
+              Worked on the frontend side of the project. This web app is a
+              collaboration between me and a friend of mine. It is written in
+              <span className='text-orange-600 font-bold'> React </span>
+              using
+              <span className='text-orange-600 font-bold'> Typescript </span>
+              as the main language. The goal of the creation of this website is
+              for us, the creators of this website, to showcase the
+              implementation of Spotify Web API&apos;s features such as
+              authorization and API consumption. Some examples of API
               consumption include getting user&apos;s spotify data, user&apos;s
               top tracks and audio features, and user&apos;s top items. The data
               is provided by Spotify API through OAuth which was made possible
@@ -87,7 +101,8 @@ const IdentifyCard: FC = () => {
         </CardBody>
         <CardFooter className='bg-yellow-400 pl-10'>
           <p className='text-zinc-900 font-semibold'>
-            Status: Waiting for Spotify&apos;s approval for their API
+            Status: <span className='font-extrabold'>Deployed</span>, though
+            still waiting for Spotify&apos;s approval for usage
           </p>
         </CardFooter>
       </Card>
