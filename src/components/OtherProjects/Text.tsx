@@ -25,7 +25,7 @@ const Text: FC = () => {
 
   return (
     <motion.p
-      className='sm:text-6xl text-5xl font-bold sm:w-[30%] sm:mt-10 mt-32'
+      className='sm:text-6xl text-4xl font-bold sm:w-[30%] w-[50%] sm:mt-10 mt-32 sm:ml-0 ml-10'
       variants={gerak}
       initial='hidden'
       animate={animationControl}

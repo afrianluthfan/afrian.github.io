@@ -25,7 +25,7 @@ const StackText: FC = () => {
 
   return (
     <motion.div
-      className='flex relative flex-col h-auto w-full sm:items-start justify-center px-6 sm:p-12'
+      className='flex relative flex-col h-auto w-[50%] sm:w-full sm:items-start justify-center px-6 sm:p-12'
       variants={gerak}
       initial='hidden'
       animate={animationControl}
@@ -36,7 +36,7 @@ const StackText: FC = () => {
       }}
       ref={ref}
     >
-      <h1 className='font-albert text-5xl sm:text-8xl font-bold text-left w-[70%]'>
+      <h1 className='font-albert text-4xl sm:text-8xl font-bold text-left w-[70%]'>
         These are the main <span className='text-orange-600'>tech stacks </span>
         that I use,
       </h1>

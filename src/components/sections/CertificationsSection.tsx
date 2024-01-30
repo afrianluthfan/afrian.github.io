@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import AnimatedDivider from '../AnimatedDivider';
 import CertText from '../Certifications/CertText';
 import AnimatedAccordionCard from '../Certifications/AnimatedAccordionCard';
-import AnimatedDividerH from '../AnimatedDividerH';
 import Y2kDeco5 from '../Y2kDeco5';
 
 const CertificationsSection: FC = () => (
@@ -19,10 +18,6 @@ const CertificationsSection: FC = () => (
     <div className='hidden sm:block h-[80%]'>
       <AnimatedDivider />
     </div>
-    <div className='sm:hidden block w-[80%]'>
-      <AnimatedDividerH />
-    </div>
-
     <AnimatedAccordionCard />
   </section>
 );
