@@ -101,7 +101,7 @@ const Timeline: FC = () => (
       </div>
     </div>
     <div>
-      <h1 className='font-bold pt-8 text-sm sm:text-medium sm:w-auto w-[50%]'>
+      <h1 className='font-bold pt-8 text-sm sm:text-medium sm:w-auto w-[50%] sm:block hidden'>
         Hover over each bar to see the details of my activities!
       </h1>
     </div>
