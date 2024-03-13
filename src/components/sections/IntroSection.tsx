@@ -14,7 +14,7 @@ const IntroSection: FC = () => (
     <div className='absolute sm:right-[0%] sm:top-[25%] top-0 left-0 sm:left-[75%] opacity-30 -rotate-90 sm:rotate-0 '>
       <Y2kDeco3 />
     </div>
-    <div className='flex flex-row items-center w-[90%] sm:w-[70%] h-full '>
+    <div className='w-[90%] sm:w-[70%] h-full '>
       <IntroText />
     </div>
   </section>

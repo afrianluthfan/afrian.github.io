@@ -27,5 +27,4 @@ const Home = () => (
     <FooterSection />
   </main>
 );
-
 export default Home;
