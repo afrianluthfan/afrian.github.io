@@ -43,7 +43,7 @@ const VexoCard: FC = () => {
         ease: 'easeInOut',
       }}
     >
-      <Card className='sm:h-[75%] w-[80%]'>
+      <Card className='sm:h-[75%] h-full w-[80%]'>
         <CardHeader className='text-5xl font-bold px-10 pt-10'>
           <h1 className='flex flex-row w-auto gap-2 text-orange-600'>VexO</h1>
         </CardHeader>
@@ -79,13 +79,16 @@ const VexoCard: FC = () => {
             className='mt-5 mb-5 h-full overflow-x-clip'
           >
             <Card className='flex gap-1 flex-row justify-start items-start h-full hover:animate-pulse'>
-              <CardBody className='w-[20%] h-full flex items-center justify-center'>
+              <CardBody className='w-[20%] h-full sm:flex items-center justify-center hidden'>
                 <GitHubIcon />
               </CardBody>
 
-              <CardBody className=' bg-orange-600 h-full flex items-center justify-center'>
-                <p className='text-3xl font-bold text-white'>
+              <CardBody className='bg-orange-600 h-full flex items-start sm:items-center justify-center'>
+                <p className='text-3xl font-bold text-white hidden sm:block'>
                   Visit the GitHub repository
+                </p>
+                <p className='text-3xl font-bold text-white sm:hidden block'>
+                  Visit <br /> the GitHub <br /> repository
                 </p>
               </CardBody>
             </Card>

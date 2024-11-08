@@ -43,8 +43,8 @@ const OcrCard: FC = () => {
         ease: 'easeInOut',
       }}
     >
-      <Card className='sm:h-[75%] w-[80%]'>
-        <CardHeader className='text-5xl font-bold px-10 pt-10 text-orange-600'>
+      <Card className='sm:h-[75%] h-full w-[80%]'>
+        <CardHeader className='sm:text-5xl text-3xl font-bold px-10 pt-10 text-orange-600'>
           AI-Assisted SnippingTool OCR
         </CardHeader>
         <CardBody className='px-10 pt-5 h-[30vh] sm:h-[60%]'>
@@ -80,13 +80,16 @@ const OcrCard: FC = () => {
             className='mt-5 mb-5 h-full'
           >
             <Card className='flex gap-1 flex-row justify-start items-start h-full'>
-              <CardBody className='w-[20%] h-full flex items-center justify-center'>
+              <CardBody className='hidden w-[20%] h-full sm:flex items-center justify-center'>
                 <GitHubIcon />
               </CardBody>
 
-              <CardBody className='bg-orange-600 h-full flex items-center justify-center'>
-                <p className='text-3xl font-bold text-white'>
+              <CardBody className='bg-orange-600 h-full flex items-start sm:items-center justify-center'>
+                <p className='text-3xl font-bold text-white sm:block hidden'>
                   Visit the GitHub repository
+                </p>
+                <p className='text-3xl font-bold text-white sm:hidden block'>
+                  Visit <br /> the GitHub <br /> repository
                 </p>
               </CardBody>
             </Card>

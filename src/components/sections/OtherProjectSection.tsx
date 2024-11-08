@@ -9,7 +9,7 @@ import CardsCarousel from '../OtherProjects/CardsCarousel';
 
 const OtherProjectSection: FC = () => (
   <section
-    className='relative h-[200px] sm:h-fit w-full sm:p-16 flex flex-col overflow-x-hidden overflow-y-clip'
+    className='relative h-[1400px] sm:h-fit w-full sm:p-16 flex flex-col overflow-x-hidden overflow-y-clip'
     id='proj'
   >
     <div className='w-96 h-96 absolute top-28 -right-28 rotate-12'>
