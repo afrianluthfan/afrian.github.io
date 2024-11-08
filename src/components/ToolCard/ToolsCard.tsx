@@ -14,8 +14,6 @@ import {
 import { motion, useInView, useAnimation } from 'framer-motion';
 import FramerIcon from './FramerIcon';
 import GitHubIcon from './GitHubIcon';
-import PSIcon from './PSIcon';
-import AIIcon from './AIIcon';
 
 const ToolsCard: FC = () => {
   const gerak = {
