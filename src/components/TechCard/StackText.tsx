@@ -37,7 +37,7 @@ const StackText: FC = () => {
       ref={ref}
     >
       <h1 className='font-albert text-4xl sm:text-8xl font-bold text-left w-[70%]'>
-        These are the main <span className='text-orange-600'>tech stacks </span>
+        These are the main <span className='text-orange-600'>techs </span>
         that I use,
       </h1>
     </motion.div>

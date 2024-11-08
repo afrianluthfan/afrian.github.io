@@ -69,15 +69,16 @@ const TechCard: FC = () => {
             <NextJSIcon />
           </Link>
         </Tooltip>
+
         <Tooltip
           content={
             <div className='px-1 py-2'>
-              <div className='text-small font-bold'>CodeIgniter</div>
+              <div className='text-small font-bold'>Tensorflow</div>
             </div>
           }
         >
-          <Link href='https://codeigniter.com/'>
-            <Image src='./ci.svg' alt='javascript' width={100} height={100} />
+          <Link href='https://www.tensorflow.org/'>
+            <Image src='tf.svg' alt='react' width={100} height={100} />{' '}
           </Link>
         </Tooltip>
       </Card>

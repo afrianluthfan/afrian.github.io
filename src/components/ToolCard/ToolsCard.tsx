@@ -51,8 +51,8 @@ const ToolsCard: FC = () => {
       ref={ref}
     >
       <Card className='max-h-[700px] flex sm:flex-col sm:h-auto h-[800px] overflow-auto'>
-        <ScrollShadow size={100} hideScrollBar>
-          <div className='flex flex-col sm:flex-row w-auto h-auto p-12 gap-12'>
+        <ScrollShadow>
+          <div className='flex flex-col justify-center sm:grid sm:grid-cols-4 w-full h-auto p-12 gap-12'>
             <Tooltip
               content={
                 <div className='px-1 py-2'>
@@ -69,7 +69,17 @@ const ToolsCard: FC = () => {
                 />
               </Link>
             </Tooltip>
-
+            <Tooltip
+              content={
+                <div className='px-1 py-2'>
+                  <div className='text-small font-bold'>Python</div>
+                </div>
+              }
+            >
+              <Link href='https://www.python.org/'>
+                <Image src='python.svg' alt='react' width={100} height={100} />
+              </Link>
+            </Tooltip>
             <Tooltip
               content={
                 <div className='px-1 py-2'>
@@ -86,7 +96,6 @@ const ToolsCard: FC = () => {
                 />
               </Link>
             </Tooltip>
-
             <Tooltip
               content={
                 <div className='px-1 py-2'>
@@ -98,7 +107,44 @@ const ToolsCard: FC = () => {
                 <FramerIcon />
               </Link>
             </Tooltip>
-
+            <Tooltip
+              content={
+                <div className='px-1 py-2'>
+                  <div className='text-small font-bold'>Git</div>
+                </div>
+              }
+            >
+              <Link href='https://git-scm.com/'>
+                <Image src='git.svg' alt='react' width={100} height={100} />
+              </Link>
+            </Tooltip>
+            <Tooltip
+              content={
+                <div className='px-1 py-2'>
+                  <div className='text-small font-bold'>GitHub</div>
+                </div>
+              }
+            >
+              <Link href='https://github.com/'>
+                <GitHubIcon />
+              </Link>
+            </Tooltip>
+            <Tooltip
+              content={
+                <div className='px-1 py-2'>
+                  <div className='text-small font-bold'>Visual Studio Code</div>
+                </div>
+              }
+            >
+              <Link href='https://code.visualstudio.com/'>
+                <Image
+                  src='./visual-studio-code-svgrepo-com.svg'
+                  alt='vscode'
+                  width={100}
+                  height={100}
+                />
+              </Link>
+            </Tooltip>
             <Tooltip
               content={
                 <div className='px-1 py-2'>
@@ -116,62 +162,9 @@ const ToolsCard: FC = () => {
               </Link>
             </Tooltip>
           </div>
-          <div className='flex flex-col sm:flex-row w-auto h-auto p-12 gap-12'>
-            <Tooltip
-              content={
-                <div className='px-1 py-2'>
-                  <div className='text-small font-bold'>GitHub</div>
-                </div>
-              }
-            >
-              <Link href='https://github.com/'>
-                <GitHubIcon />
-              </Link>
-            </Tooltip>
-
-            <Tooltip
-              content={
-                <div className='px-1 py-2'>
-                  <div className='text-small font-bold'>Visual Studio Code</div>
-                </div>
-              }
-            >
-              <Link href='https://code.visualstudio.com/'>
-                <Image
-                  src='./visual-studio-code-svgrepo-com.svg'
-                  alt='vscode'
-                  width={100}
-                  height={100}
-                />
-              </Link>
-            </Tooltip>
-
-            <Tooltip
-              content={
-                <div className='px-1 py-2'>
-                  <div className='text-small font-bold'>Adobe Photoshop</div>
-                </div>
-              }
-            >
-              <Link href='https://www.adobe.com/'>
-                <PSIcon />
-              </Link>
-            </Tooltip>
-
-            <Tooltip
-              content={
-                <div className='px-1 py-2'>
-                  <div className='text-small font-bold'>Adobe Illustrator</div>
-                </div>
-              }
-            >
-              <Link href='https://www.adobe.com/'>
-                <AIIcon />
-              </Link>
-            </Tooltip>
-          </div>
         </ScrollShadow>
-        <CardFooter className='flex items-center justify-center opacity-30 sm:opacity-0 p-6'>
+
+        <CardFooter className='flex sm:hidden items-center justify-center opacity-30 sm:opacity-0 p-6'>
           <p className='self-center text-sm font-montserrat font-bold'>
             scroll down for more..
           </p>
