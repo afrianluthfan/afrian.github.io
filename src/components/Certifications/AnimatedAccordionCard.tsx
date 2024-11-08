@@ -38,7 +38,7 @@ const AnimatedAccordionCard: FC = () => {
       }}
       ref={ref}
     >
-      <Card className='h-full p-11'>
+      <Card className='h-full p-11 overflow-y-scroll'>
         <h1 className='font-bold mb-11 sm:text-medium text-small'>
           My courses and ceritifications
         </h1>

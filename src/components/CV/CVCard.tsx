@@ -9,6 +9,7 @@ import {
   Button,
   Link,
   Image,
+  Tooltip,
 } from '@nextui-org/react';
 import BlurBG from '../BlurBG';
 import DownloadIcon from '../DownloadIcon';
@@ -76,18 +77,23 @@ const CVCard: FC = () => {
             </div>
           </CardBody>
           <CardFooter className='items-center justify-center'>
-            <Link
-              href='https://drive.google.com/uc?export=download&id=1saSNjuc9tQUjPtFCgy5fzLKhtSKgp_Wk'
-              className='text-white'
+            <Tooltip
+              showArrow
+              content='Last updated: November 8th 2024'
+              className='bg-orange-600'
             >
-              <Button
-                color='primary'
-                endContent={<DownloadIcon />}
-                className='sm:w-64 sm:h-12 h-11 w-48 sm:text-lg'
+              <Link
+                href='https://drive.google.com/uc?export=download&id=1saSNjuc9tQUjPtFCgy5fzLKhtSKgp_Wk'
+                className='text-white'
               >
-                Get my CV
-              </Button>
-            </Link>
+                <Button
+                  endContent={<DownloadIcon />}
+                  className='sm:w-64 sm:h-12 h-11 w-48 sm:text-lg bg-orange-600'
+                >
+                  Get my CV
+                </Button>
+              </Link>
+            </Tooltip>
           </CardFooter>
         </Card>
       </motion.div>

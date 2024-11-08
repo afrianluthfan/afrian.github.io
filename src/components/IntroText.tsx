@@ -37,8 +37,8 @@ const IntroText: FC = () => {
         }}
         ref={ref}
       >
-        I&apos;m a Frontend Web developer <br />
-        and a creative individual.
+        I&apos;m a developer <br />
+        with a creative mind.
       </motion.h1>
     </motion.div>
   );

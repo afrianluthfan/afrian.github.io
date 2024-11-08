@@ -48,8 +48,7 @@ const GithubRepo: FC = () => {
         className='text-white flex items-center justify-center'
       >
         <Button
-          color='primary'
-          className='mt-3 w-full'
+          className='mt-3 w-full bg-orange-600'
           endContent={<GithubIcon />}
         >
           GitHub Repository

@@ -50,6 +50,7 @@ const AccordionCert: FC = () => (
           Dicoding Indonesia
         </Link>
       </div>
+      <Divider className='mb-5' />
       <div className='mb-5'>
         <Link href='https://www.dicoding.com/certificates/1RXY0R6GQZVM'>
           Learning to create web-app with React
@@ -100,6 +101,33 @@ const AccordionCert: FC = () => (
       <div className='mb-5'>
         <Link href='https://www.efset.org/cert/L5QGRh'>
           EF SET English Certificate 79/100 (C2 Proficient){' '}
+        </Link>{' '}
+        by{' '}
+        <Link href='https://www.dicoding.com/' className='font-bold'>
+          Dicoding Indonesia
+        </Link>
+      </div>
+      <Divider className='mb-5' />
+    </AccordionItem>
+    <AccordionItem
+      key='3'
+      aria-label='Accordion 3'
+      subtitle='Certifications or courses that are related to data or machine learning'
+      title='Data/Machine Learning related certifications'
+    >
+      <div className='mb-5'>
+        <Link href='https://www.dicoding.com/certificates/2VX341ELJZYQ'>
+          Learning the basics of Python programming language
+        </Link>{' '}
+        by{' '}
+        <Link href='https://www.dicoding.com/' className='font-bold'>
+          Dicoding Indonesia
+        </Link>
+      </div>
+      <Divider className='mb-5' />
+      <div className='mb-5'>
+        <Link href='https://www.dicoding.com/certificates/MRZMYKYENZYQ'>
+          Learning the basics of data visualization
         </Link>{' '}
         by{' '}
         <Link href='https://www.dicoding.com/' className='font-bold'>
