@@ -117,7 +117,7 @@ const NavigationBar: FC = () => (
       </Link>
     </NavbarBrand>
     <NavbarContent className='hidden sm:flex gap-4' justify='center'>
-      <NavbarItem>
+      <NavbarItem className='cursor-pointer hover:opacity-70 hover:scale-105 transition-all'>
         <Link
           activeClass='active'
           to='introduction'
@@ -130,7 +130,7 @@ const NavigationBar: FC = () => (
         </Link>
       </NavbarItem>
       <Divider orientation='vertical' className='h-[40%]' />
-      <NavbarItem>
+      <NavbarItem className='cursor-pointer hover:opacity-70 hover:scale-105 transition-all'>
         <Link
           activeClass='active'
           to='stacks'
@@ -143,7 +143,7 @@ const NavigationBar: FC = () => (
         </Link>
       </NavbarItem>
       <Divider orientation='vertical' className='h-[40%]' />
-      <NavbarItem>
+      <NavbarItem className='cursor-pointer hover:opacity-70 hover:scale-105 transition-all'>
         <Link
           activeClass='active'
           to='journey'
@@ -156,7 +156,7 @@ const NavigationBar: FC = () => (
         </Link>
       </NavbarItem>
       <Divider orientation='vertical' className='h-[40%]' />
-      <NavbarItem>
+      <NavbarItem className='cursor-pointer hover:opacity-70 hover:scale-105 transition-all'>
         <Link
           activeClass='active'
           to='certifications'
@@ -169,7 +169,7 @@ const NavigationBar: FC = () => (
         </Link>
       </NavbarItem>
       <Divider orientation='vertical' className='h-[40%]' />
-      <NavbarItem>
+      <NavbarItem className='cursor-pointer hover:opacity-70 hover:scale-105 transition-all'>
         <Link
           activeClass='active'
           to='proj'
@@ -182,7 +182,7 @@ const NavigationBar: FC = () => (
         </Link>
       </NavbarItem>
       <Divider orientation='vertical' className='h-[40%]' />
-      <NavbarItem>
+      <NavbarItem className='cursor-pointer hover:opacity-70 hover:scale-105 transition-all'>
         <Link
           activeClass='active'
           to='cv'

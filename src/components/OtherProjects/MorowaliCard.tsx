@@ -78,7 +78,7 @@ const MorowaliCard: FC = () => {
 
               <CardBody className='bg-gradient-to-r from-indigo-600 to-gray-400 h-full flex items-center justify-center'>
                 <p className='text-3xl font-bold text-white'>
-                  Go to the GitHub repository
+                  Visit the GitHub repository
                 </p>
               </CardBody>
             </Card>

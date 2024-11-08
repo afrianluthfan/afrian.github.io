@@ -77,7 +77,7 @@ const CVCard: FC = () => {
           </CardBody>
           <CardFooter className='items-center justify-center'>
             <Link
-              href='https://drive.google.com/uc?export=download&id=1lX8kW0yS_ztVoYdW6wcC2THylz3g2pAP'
+              href='https://drive.google.com/uc?export=download&id=1saSNjuc9tQUjPtFCgy5fzLKhtSKgp_Wk'
               className='text-white'
             >
               <Button
