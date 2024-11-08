@@ -7,9 +7,9 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-// Import your card components here
 import IdentifyCard from './IdenfityCard';
 import VexoCard from './VexoCard';
+import OcrCard from './OcrCard';
 
 const CardsCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -52,7 +52,7 @@ const CardsCarousel = () => {
             <VexoCard />
           </div>
           <div className='flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] p-2'>
-            <IdentifyCard />
+            <OcrCard />
           </div>
         </div>
       </div>
